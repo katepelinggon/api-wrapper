@@ -8,5 +8,8 @@ module Rawg
 			response = Request.call('get', "/creators")
 		end
 
+		def self.creator_details(id)
+			response = Request.call('get', "/creators/#{id}")
+		end
 	end
 end
