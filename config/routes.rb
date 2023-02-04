@@ -5,5 +5,7 @@ Rails.application.routes.draw do
   # root "articles#index"
   namespace :api do
     get '/creator-roles', to: 'creator_roles#index'
+    get '/creators', to: 'creators#index'
+    get '/creators/:id', to: 'creator_details#index'
   end
 end
