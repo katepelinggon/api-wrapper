@@ -3,5 +3,10 @@ module Rawg
 		def self.creator_roles
 			response = Request.call('get', "/creator-roles")
 		end
+
+		def self.creators
+			response = Request.call('get', "/creators")
+		end
+
 	end
 end
